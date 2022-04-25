@@ -9,33 +9,37 @@
 <body>
     <h3>Cadastro da liga dos Astronautas</h3>
     <form action="" method="post">
-        <label for="">Nome:</label>
-        <input type="text" placeholder="Nome Completo" required><br>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Nome Completo" required><br>
         <br>
-        <label for="">Email:</label>
-        <input type="email" name="email" placeholder="seuemail@dominio.com" required> -
-        <label for="">Password:</label>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="seuemail@dominio.com" required> -
+        <label for="password">Password:</label>
         <input type="password" name="password" id="password" required><br>
         <br>
-        <label for="">Data de nacimento:</label>
-        <input type="date" name="date" id="date" required> - 
-        <label for="">Foto:</label>
-        <input type="file"><br>
+
+        <label for="birthday">Data de nacimento:</label>
+        <input type="date" name="birthday" id="birthday" required> -
+
+        <label for="photo">Foto:</label>
+        <input type="file" name="photo" id="photo"><br>
         <br>
-        <label for="countries">Nacionalidades:</label>
-        <select name="countries" id="countries">
-            <option value="brasil">Brasil</option>
-            <option value="estados unidos">Estados Unidos</option>
-            <option value="inglaterra">Inglaterra</option>
-            <option value="alemanha">Alemanha</option>
+
+        <label for="nationality">Nacionalidades:</label>
+        <select name="nationality" id="nationality">
+            <option value="brasilian">Brasil</option>
+            <option value="american">Estados Unidos</option>
+            <option value="england">Inglaterra</option>
+            <option value="russian">Russia</option>
         </select> - 
 
         <label for="genero">Genero:</label>
-        <input type="radio" name="genero" value="feminino">
+        <input type="radio" name="gender" id="female" value="feminino">
         <label for="F">F</label>
-        <input type="radio" name="genero" value="masculino">
+        <input type="radio" name="gender" id="male" value="masculino">
         <label for="M">M</label><br>
         <br>
+
         <label for="qualidades">Suas principais qualidades:</label><br>
         <label for="inteligencia">Inteligência</label>
         <input type="checkbox"> /
@@ -44,10 +48,10 @@
         <label for="preparoFisico">Preparo Físico</label>
         <input type="checkbox"> /
         <label for="educacao">Educação</label>
-        <input type="checkbox"> / <br>
+        <input type="checkbox"> <br>
         <br>
 
-        <textarea name="msg" id="" cols="30" rows="10" placeholder="Porque você gostaria de ser um astronauta? "></textarea><br>
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Porque você gostaria de ser um astronauta? "></textarea><br>
         <br>
 
         <input type="submit" value="Criar">
