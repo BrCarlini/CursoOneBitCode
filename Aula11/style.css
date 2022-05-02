@@ -3,6 +3,17 @@ li {
 }
 
 h1 {
-    font-size: 50px;
     color: purple;
+    /*
+    border-color: yellow;
+    border-width: 8px;
+    border-style: solid;
+    */
+    border: 8px solid yellow;
+}
+
+body {
+    background-image: url('https://startupi.com.br/wp-content/uploads/2021/04/166325668_1006420773098938_3585808036919029989_n.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
