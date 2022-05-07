@@ -1,0 +1,1 @@
+console.log(3.5 * 2.34 + ("Escola"[2] + "Javascript"[5]).length)

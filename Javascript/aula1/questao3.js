@@ -1,0 +1,1 @@
+console.log((((5 + 1 * 4) - "JS".length) * 2) - 10)
