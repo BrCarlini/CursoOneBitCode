@@ -5,12 +5,12 @@ let idade = prompt('Informe sua idade: ')
 
 alert(`Nome: ${nome}`)
 alert(`Idade: ${idade}`)
-let confirma = confirm('Você confirma sua idade ?')
+let confirma = confirm(`Você confirma que sua idade é  ${idade} anos ?`)
 
 if(confirma == true){
     alert('Obrigado por confirmar sua idade! Pode seguir')
 }else{
     while(confirma != true){
-        confirma = confirm('Você confirma sua idade ?')
+        confirma = confirm(`Você confirma que sua idade é  ${idade} anos ?`)
     }
 }
