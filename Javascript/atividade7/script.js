@@ -1,9 +1,13 @@
-let nomeNave = "Bruno"//prompt("Informe o nome da nava: ")
+let nomeNave = prompt("Informe o nome da nava: ")
 let nomeInvertido = " "
 
-for(i = 0; i <= nomeNave.length; i++){
-    var separar = nomeNave.replace()
-    
+for(let i = nomeNave.length - 1; i >= 0; i--){
+    if(nomeNave[i] == "e"){
+        break
+    }
+    nomeInvertido += nomeNave[i]
 }
 
-console.log(nomeNave[i])
+
+
+alert(`Nome original: ${nomeNave}\nNome após ocultação: ${nomeInvertido}`)
