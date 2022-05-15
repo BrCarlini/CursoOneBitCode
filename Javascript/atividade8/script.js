@@ -4,29 +4,45 @@ let velocidadeNave = 0
 
 function acelerar(){
     velocidadeNave += 5
-    alert(`Acelerando 5km/s.\nVelocidade aumentada para ${velocidadeNave}`)
+    alert(`Acelerando 5km/s.\nVelocidade aumentada para ${velocidadeNave}km/s`)
 }
 
 function desacelerar(){
-    velocidadeNave -= 5
-    alert(`Desacelerando 5km/s.\nVelocidade diminuida para ${velocidadeNave}`)
+    if(velocidadeNave > 0){
+        velocidadeNave -= 5
+        alert(`Desacelerando 5km/s.\nVelocidade diminuida para ${velocidadeNave}km/s`)
+    } else{
+        alert("A velocidade não pode ficar com o valor negativo.")
+    }
+    
 }
 
 function imprimirDadosBordo(){
-    alert(`Nome da Nave: ${nomeNave}\nVelocidade atual: ${velocidadeNave}`)
-
+    alert(`Nome da Nave: ${nomeNave}\nVelocidade atual: ${velocidadeNave}km/s`)
 }
-let validaOpcao = true
 
-function menu(validaOpcao){
-    while(validaOpcao){
+function menu(){
+    while(true){
         let opcoes = parseInt(prompt("Escolha uma das opções:\n1 - Acelerar a nave em 5km/s\n2 - Desacelerar em 5km/s\n3 - Imprimir dados de bordo\n4 - Sair do programa"))
 
         if(opcoes == 4){
-            alert("Oi")
-        }
+            alert(`Nome da nave: ${nomeNave}\nVelocidade Atual: ${velocidadeNave}km/s`)
+            break
+        } 
 
-        
+        switch(opcoes){
+            case 1:
+                acelerar()
+                break
+            case 2:
+                desacelerar()
+                break
+            case 3:
+                imprimirDadosBordo()
+                break
+            default:
+                continue
+        }
     }
 }
 
