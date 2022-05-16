@@ -26,7 +26,7 @@ function menu(){
         let opcoes = parseInt(prompt("Escolha uma das opções:\n1 - Acelerar a nave em 5km/s\n2 - Desacelerar em 5km/s\n3 - Imprimir dados de bordo\n4 - Sair do programa"))
 
         if(opcoes == 4){
-            alert(`Nome da nave: ${nomeNave}\nVelocidade Atual: ${velocidadeNave}km/s`)
+            alert(`Programa encerrado!!\nNome da nave: ${nomeNave}\nVelocidade Atual: ${velocidadeNave}km/s`)
             break
         } 
 
