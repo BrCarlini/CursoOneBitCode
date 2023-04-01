@@ -6,7 +6,7 @@ let pontosDeVida = Number(prompt("Informe a quantidade de vida do personagem def
 const poderDefesa = Number(prompt("Informe o poder de defesa: "))
 const escudo = window.confirm("O defensor tem escudo ?")
 
-let dano;
+let dano = 0
 
 
 if(poderAtaque > poderDefesa && escudo === false){
@@ -14,12 +14,15 @@ if(poderAtaque > poderDefesa && escudo === false){
     
 } else if(poderAtaque > poderDefesa && escudo === true){
     dano = (poderAtaque - poderDefesa) / 2;
-} else{
-    dano = 0;
 }
 
 
 pontosDeVida -= dano
 
-alert(`O Atacante ${nomeAtacante} causou ${dano} de dano no Defensor ${nomeDefensor}.
-        Os pontos de vida atual do defensor é de ${pontosDeVida}`)
+alert(`${nomeAtacante}
+       Poder de ataque: ${dano}
+       
+       ${nomeDefensor}
+       Os pontos de vida atual: ${pontosDeVida}
+       Poder de defesa: ${poderDefesa}
+       Defensor tem escudo ? ${escudo ? "Sim": "Não"}`)
