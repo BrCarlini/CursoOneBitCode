@@ -1,0 +1,1 @@
+var comment1 = new Comment('Bruno', 'Comentario Bruno')
