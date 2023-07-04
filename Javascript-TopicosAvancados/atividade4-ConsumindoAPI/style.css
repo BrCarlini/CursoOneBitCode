@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    padding: 2rem .1rem;
+    text-align: center;
+    background-color: #101010;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: auto;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.container-financial {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.form {
+    height: 50%;
+    margin-bottom: 5rem;
+    padding: 3rem 5rem 5rem 5rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #404040;
+}
+
+.form input {
+    margin: 2rem 0 0;
+    padding: .7rem;
+    background-color: #b1acac34;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-add {
+    margin: 2rem 0 0;
+    background-color: #101010;
+    padding: .7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px .4px 5px #404040;
+    transition: .5s;
+}
+
+.btn-add:hover {
+    margin: 1.9rem 0 0;
+    cursor: pointer;
+    box-shadow: 4px 3.1px 5px #404040;
+}
+
+.container-transactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.cardTransaction {
+    width: 100%;
+    padding: 3rem 3rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #404040;
+}
+
+
+.container-btn-card {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+
+.card-btn-config {
+    background-color: #101010;
+    padding: .7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px .4px 5px #404040;
+    transition: .5s;
+}
+
+.card-btn-config:hover{
+    cursor: pointer;
+}
+
+.btn-deletar {
+    background-color: #D50000;
+}
+
+
+
+
+.container-balance {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 10rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #101010;
+}
+
+
+.footer div {
+    margin: 2rem .1rem;
+}

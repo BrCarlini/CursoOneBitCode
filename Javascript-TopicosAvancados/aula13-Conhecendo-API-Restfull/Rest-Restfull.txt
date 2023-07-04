@@ -1,0 +1,25 @@
+Rest significa Representational State Transfer,
+ou Transferência de Estado Representacional
+
+1 - É um conjunto de restrições de arquitetura que visa organizar a comunicação entre cliente e servidor.
+
+2 - Uma API Restful nada mais é do que uma API que segue a arquitetura Rest.
+
+3 - Quando um cliente faz uma requisição usando uma API Restful ela responde transferindo uma representação do estado do recurso que foi requisitado.
+
+4 - Principais pontos para que uma API seja considerada Restful:
+    - Arquitetura cliente/servidor;
+    - Comunicação através de HTTP;
+    - Comunicação stateless, ou seja, todas as solicitações são reparadas e independentes;
+    - Ter uma interface uniforme e com informações em formato padronizado:
+        - GET/users
+        - POST/users
+        - PUT/users/99
+        - GET/users/99
+        - DELETE/users/99
+
+5 - Como as APIs Resful funcionam sobre o protocolo HTTP, elas usam os seus métodos para a comunicação:
+    - GET -> obter informações
+    - POST -> enviar informações
+    - PUT/PATCH -> solicitar a atualização/correção de informações
+    - DELETE - solicitar a exclusão de informações

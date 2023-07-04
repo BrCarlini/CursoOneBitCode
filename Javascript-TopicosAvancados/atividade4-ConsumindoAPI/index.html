@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças Pessoais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Controle Financeiro Pessoal</h1>
+    </header>
+
+    <main class="content-main">
+
+        <div class="container-financial">
+
+            <form action="http://localhost:3000/transactions" class="form" method="post">
+                <h3>Adicione alguma transação :</h3>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="value">Valor:</label>
+                <input type="text" id="value" name="value">
+                <br>
+                <button class="btn-add">Adicionar</button>
+            </form>
+
+            <div class="container-transactions">
+                <h3>Transações</h3>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <article class="container-balance">
+        
+    </article>
+
+    <footer class="footer">
+        <div>
+            Criado em 2023 por Bruno Carlini
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

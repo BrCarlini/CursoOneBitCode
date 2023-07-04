@@ -1,0 +1,14 @@
+API - Application Programming Interface, ou Interface de Programação de Aplicações
+
+1 - Se refere ao conjunto de definições e protocolos pelo qual conseguimos programar nossas aplicações
+
+2 - É um conceito já existente há muito tempo na programação, mas hoje é utilizado muito para se referir aos serviços de backend na web.
+
+
+
+*Exemplos: 
+
+    - Quando usamos uma biblioteca ou framework podemos dizer que ele tem suas próprias APIs, ou seja,
+    as formas específicas como os usamos para programar as aplicações.
+
+    - APIs Rest nos fornecem padrões para criar formas de se comunicar com um servidor.

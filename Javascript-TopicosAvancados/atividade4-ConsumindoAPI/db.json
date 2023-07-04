@@ -1,0 +1,59 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "name": "Compra na Padaria",
+      "value": 9.9
+    },
+    {
+      "id": 2,
+      "name": "Compra no Shopping",
+      "value": 479.9
+    },
+    {
+      "id": 3,
+      "name": "Compra no Shopping Morumbi - Market Place",
+      "value": 500.9
+    },
+    {
+      "id": 4,
+      "name": "Compra no mercado",
+      "value": 145.9
+    },
+    {
+      "id": 5,
+      "name": "Plano SmartFit",
+      "value": 79.9
+    },
+    {
+      "name": "Plano Netflix",
+      "value": "13.50",
+      "id": 6
+    },
+    {
+      "name": "Drogaria Brasil",
+      "value": "70",
+      "id": 7
+    },
+    {
+      "name": "Call of Duty",
+      "value": "100",
+      "id": 8
+    },
+    {
+      "name": "Fifa",
+      "value": "100",
+      "id": 9
+    },
+    {
+      "name": "Bar São Paulo",
+      "value": "100",
+      "id": 10
+    },
+    {
+      "name": "Pegar minha mae",
+      "value": "250",
+      "id": 11
+    }
+  ]
+}
