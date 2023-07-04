@@ -1,0 +1,17 @@
+.button {
+    text-decoration: none;
+    color: #fff;
+    padding: .625rem;
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(4,109,187,1) 0%, rgba(4,134,187,1) 27%, rgba(20,177,236,1) 66%, rgba(136,195,226,1) 95%);
+    border-radius: .75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: .2s;
+    width: 10rem;
+}
+
+.button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: .25rem;
+}
