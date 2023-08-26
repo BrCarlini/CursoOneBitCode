@@ -1,9 +1,10 @@
 import { useState } from "react";
 import styles from "./styles.module.css"
+import Input from "../Input";
 
 export default function GeradorSenhas() {
 
-    const [senha, setSenha] = useState("")
+    const [passwordSize, setPasswordSize] = useState(12)
     const [btnCopiar, setBtnCopiar] = useState("Copiar")
 
 
@@ -63,8 +64,10 @@ export default function GeradorSenhas() {
 
                 </div>
 
-                <p>{senha}</p>
-                {console.log(senha)}
+                <Input
+                passwordSize={passwordSize}
+                setPasswordSize={setPasswordSize}
+                />
 
             </div>
         </>
