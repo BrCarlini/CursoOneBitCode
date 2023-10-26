@@ -3,6 +3,12 @@ const http = require('http');
 
 // Cria o servidor
 const server = http.createServer((req, res) => {
+    console.log(req.method)
+    console.log(req.url)
+
+    res.statusCode = 200;
+
+    res.end('<h1>Bem vindo</h1>')
 
 })
 

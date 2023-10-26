@@ -1,0 +1,11 @@
+O que é o nodemon ?
+
+- Nodemon é um utilitario que monitora as mudanças nos arquivos do seu projeto e reinicia automaticamente o servidor Node.js
+quando necessario
+
+
+Para instalar:
+- npm install nodemon --save-dev
+
+Para rodar:
+- npx nodemon

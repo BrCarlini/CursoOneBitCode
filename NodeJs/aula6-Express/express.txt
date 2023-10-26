@@ -1,0 +1,9 @@
+O que é o Express
+
+- É um framework minimalista
+- Opera através de middlewares
+- Segue um padrão chamado Chain of Responsibility
+- Se preocupa em entregar apenas a requisição e a resposta, deixando todo o fluxo de dados a escolha do desenvolvedor.
+
+Para instalar o framework Express no projeto:
+npm install express --save

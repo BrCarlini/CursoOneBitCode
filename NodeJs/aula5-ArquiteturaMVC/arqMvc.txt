@@ -1,0 +1,12 @@
+Arquitetura MVC
+
+- MVC vem de Model-View-Controller.
+- É um padrão de Arquitetura.
+- Utilizado para organizar nosso código separando responsabilidades.
+
+- Possui 3 responsabilidades principais:
+    - Model: Responsável por lidar com os dados, desde a sua leitura, armazenamento e validação;
+
+    - View: É a parte de exibição de dados para o usuário;
+
+    - Controller: Responsável por receber as requisições das views e chamar o model correto
