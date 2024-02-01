@@ -19,22 +19,30 @@ router.get('/', async (req, res) => {
         //res.status(500).json(error)
         res.status(500).render('pages/error/index', {error: 'Erro ao exibir as Listas'})
     }
+})
 
-
+router.get('/new', async(req, res) => {
+    try{
+        let checklist = new Checklist();
+        res.status(200).render('checklist/new', { checklist: checklist })
+    } catch(error){
+        res.status(500).render('pages/error', {errors: 'Erro ao carregar o formulário'})
+    }
 })
 
 
 
 // Adiciona o que foi passado no body da req e devolve em formato json
 router.post('/', async (req, res) => {
-    let { name } = req.body
+    let { name } = req.body.checklist
+    let checklist = new Checklist({name})
     
 
     try{
-        let checklist = await Checklist.create({ name })
-        res.status(200).json(checklist)
+        await Checklist.save()
+        res.redirect('/checklists')
     } catch(error) {
-        res.status(422).json(error)
+        res.status(500).render('pages/error', {error: 'Erro ao criar checklist'})
     }
 
 })
